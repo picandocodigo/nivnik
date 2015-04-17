@@ -1,4 +1,4 @@
-<ul>
+<ul class="contacts-list">
   <% @contacts.each do |c| %>
   <li>
     <%= link_to(c.full_name + ' ' + c.description, contact_path(c)) %>

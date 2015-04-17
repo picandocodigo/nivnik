@@ -86,8 +86,9 @@ input,select {
 Variables
 ###########################*/
 
-$rouge-dark:    #b01335;
 $rouge-light:   #c5183d;
+$rouge-medium:  #b01335;
+$rouge-dark:    #980d2b;
 
 /*###########################
 Typography
@@ -109,7 +110,7 @@ Elements
 
 .nav-button {
   color: white;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.15);
   text-decoration: none;
   line-height: 60px;
   padding: 0 20px;
@@ -144,7 +145,7 @@ html, body {
   padding: 15px;
   line-height: 60px;
 
-  background-color: $rouge-dark;
+  background-color: $rouge-medium;
   color: white;
   text-align: center;
 
@@ -158,6 +159,17 @@ html, body {
   bottom: 0;
   left: 0;
   overflow-y: scroll;
+
+  background-color: $rouge-dark;
 }
+
+.contacts-list {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+
 
 
