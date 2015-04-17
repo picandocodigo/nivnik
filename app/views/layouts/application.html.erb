@@ -6,21 +6,20 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-<header class="fixed group">
-  <nav>
-    <a href="#">
-      Back
-      <i class="fa fa-chevron-left"></i>
-    </a>
-    <h1>Page Title</h1>
-    <a href="#">
-      New
-      <i class="fa fa-plus"></i>
-    </a>
-  </nav>  
-</header>
 
-<main>
+<nav class="top-navigation">
+  <a href="#">
+    Back
+    <i class="fa fa-chevron-left"></i>
+  </a>
+  <h1>Page Title</h1>
+  <a href="#">
+    New
+    <i class="fa fa-plus"></i>
+  </a>
+</nav>
+
+<main class="main-content">
   <%= yield %>
 </main>
 
