@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
 
   def index
     @page_title = "Contacts"
-    @contacts = Contact.all
+    @contacts = Contact.order(:surname)
   end
 
   def new
