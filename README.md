@@ -1,0 +1,3 @@
+# Nivnik
+
+Collaborative contact list
