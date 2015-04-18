@@ -17,6 +17,7 @@ class ContactsController < ApplicationController
   end
 
   def edit
+    @page_title = "Editing contact"
     @contact = Contact.find(params[:id])
   end
 
