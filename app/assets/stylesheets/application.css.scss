@@ -143,7 +143,7 @@ html, body {
   padding: 15px;
   line-height: 60px;
 
-  background-color: $rouge-medium;
+  background-color: $rouge-light;
   color: white;
   text-align: left;
 
@@ -163,15 +163,45 @@ html, body {
   overflow-y: scroll;
 
   background-color: $rouge-dark;
+  font-size: 1.4rem;
 }
 
 .contacts-list {
   display: block;
-  height: 100%;
   width: 100%;
+  box-shadow: 0 10px 0 rgba(0,0,0,0.05);
+
+  li {
+    list-style: none;
+    background-color: $rouge-light;
+    height: 90px;
+    padding: 20px;
+    line-height: 30px;
+
+    &:nth-child(odd) {
+      background-color: $rouge-medium;
+    }
+
+    &:hover, &:active {
+      background-color: $rouge-dark;
+    }
+
+  }
 }
 
+.tag {
+  display: block;
+  color: white;
+  text-decoration: none;
 
+  span {
+    display: block;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 20px;
+    color: rgba(255,255,255,0.35);
+  }
+}
 
 
 
