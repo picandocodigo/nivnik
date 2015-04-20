@@ -2,6 +2,8 @@
   <%= link_to '<i class="fa fa-chevron-circle-left fa-lg"></i>'.html_safe,
   contacts_path, class: "nav-button pull-left" %>
   <label><%= @page_title %></label>
-  <a href="#" id="submit_form">Save</a>
+  <a href="#" id="submit_form" class="nav-button pull-right">
+    <i class="fa fa-check-circle fa-lg"></i>
+  </a>
 <% end %>
 <%= render partial: "form", locals: {contact: @contact} %>

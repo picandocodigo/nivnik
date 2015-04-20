@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   end
 
   def new
-    @page_title = "New Contact"
+    @page_title = "Create"
     @contact = Contact.new
   end
 
@@ -17,7 +17,7 @@ class ContactsController < ApplicationController
   end
 
   def edit
-    @page_title = "Edit Contact"
+    @page_title = "Edit"
     @contact = Contact.find(params[:id])
   end
 
