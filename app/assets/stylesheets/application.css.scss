@@ -86,9 +86,12 @@ input,select {
 Variables
 ###########################*/
 
-$rouge-light:   #804C5F;
-$rouge-medium:  #794759;
-$rouge-dark:    #5F3343;
+$blue-light:        #3f5d8d;
+$blue-medium:       #3a5685;
+$blue-dark:         #28416a;
+
+$success-green:     #518d3f;
+$success-highlight: #72AD60;
 
 /*###########################
 Typography
@@ -148,7 +151,7 @@ html, body {
   padding: 15px;
   line-height: 60px;
 
-  background-color: $rouge-light;
+  background-color: $blue-light;
   color: white;
   text-align: left;
 
@@ -167,7 +170,7 @@ html, body {
   left: 0;
   overflow-y: scroll;
 
-  background-color: $rouge-dark;
+  background-color: $blue-dark;
   font-size: 1.4rem;
 }
 
@@ -178,16 +181,16 @@ html, body {
 
   li {
     list-style: none;
-    background-color: $rouge-light;
+    background-color: $blue-light;
     height: 90px;
     line-height: 30px;
 
     &:nth-child(odd) {
-      background-color: $rouge-medium;
+      background-color: $blue-medium;
     }
 
     &:hover, &:active {
-      background-color: $rouge-dark;
+      background-color: $blue-dark;
     }
 
   }
@@ -212,7 +215,13 @@ html, body {
 Forms
 ###########################*/
 
-form {padding: 15px;}
+form {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {padding: 15px 15px 60px;}
 
 input, select {
   background-color: white;
@@ -224,7 +233,16 @@ input, select {
   font-size: 1.4rem;
   font-weight: 300;
 
-  &[type="submit"] {margin-bottom: 0;}
+  &[type="submit"] {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 0;
+    background-color: $success-green;
+    color: white;
+    box-shadow: inset 0 1px 0 $success-highlight;
+  }
 }
 
 .first-half {margin-right: 6%;}
