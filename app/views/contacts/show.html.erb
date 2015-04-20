@@ -14,13 +14,11 @@
   </span>
 </section>
 <section class="contact-info">
-  <a href="#" class="phone-number">
+  <a href="tel:<%= @contact.phone_number %>" class="phone-number">
     <%= @contact.phone_number %>
-    <span class="pull-right">Call</span>
   </div>
-  <a href="#" class="email">
+  <a href="mailto:<%= @contact.email %>" class="email">
     <%= @contact.email %>
-    <span class="pull-right">Email</span>
   </a>
 </section>
 <section class="notes">
