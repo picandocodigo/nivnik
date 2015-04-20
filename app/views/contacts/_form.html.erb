@@ -1,34 +1,15 @@
 <%= form_for :contact, url: contacts_path do |f| %>
-<p>
-  <%= f.label :name %><br/>
-  <%= f.text_field :name %>
-</p>
-
-<p>
-  <%= f.label :surname %><br/>
-  <%= f.text_field :surname %>
-</p>
-
-<p>
-  <%= f.label :description %><br/>
-  <%= f.text_field :description %>
-</p>
-
-<p>
-  <%= f.label :phone_number %><br/>
-  <%= f.text_field :phone_number %>
-</p>
-
-<p>
-  <%= f.label :email %><br/>
-  <%= f.text_field :email %>
-</p>
-
-<p>
-  <%= f.label :notes %><br/>
-  <%= f.text_field :notes %>
-</p>
-
-<%= f.submit %>
+  <div class="half first-half">
+    <%= f.text_field :name, placeholder: "Name" %>
+  </div>
+  <div class="half">
+    <%= f.text_field :surname, placeholder: "Surname" %>
+  </div>
+  <%= f.text_field :description, placeholder: "Description" %>
+  <%= f.text_field :phone_number, placeholder: "Phone Number" %>
+  <%= f.text_field :email, placeholder: "Email" %>
+  <%= f.text_field :notes, placeholder: "Notes" %>
+  
+  <%= f.submit %>
 
 <% end %>
