@@ -114,7 +114,7 @@ Elements
 .nav-button {
   color: white;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 90px;
 }
 
 /*###########################
@@ -149,8 +149,8 @@ html, body {
   left: 0;
   z-index: 1;
   height: 90px;
-  padding: 15px;
-  line-height: 60px;
+  padding: 0 20px;
+  line-height: 90px;
 
   background-color: $blue-light;
   color: white;
@@ -199,6 +199,8 @@ html, body {
   color: white;
   text-decoration: none;
   padding: 20px;
+
+  strong {margin-left: 7px;}
 
   span {
     display: block;
