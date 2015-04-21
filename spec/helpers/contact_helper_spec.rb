@@ -11,5 +11,12 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe ContactHelper, :type => :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "Get name and description" do
+    it "should show contact name and surname" do
+      contact = Contact.create(name: "Marty", surname: "McFly",
+                               description: "Time traveler")
+      expect(name_and_description(contact)).
+        to eq("Marty <strong>McFly</strong> <span>Time traveler</span>")
+    end
+  end
 end
